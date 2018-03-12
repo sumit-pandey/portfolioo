@@ -28,7 +28,7 @@ window.sr = ScrollReveal({ reset: true });
 
 sr.reveal('.main-frame-1', { duration: 200 });
 
-sr.reveal('.main-frame-2 .main-frame-3', {
-  origin: 'right',
-  duration: 2000
+sr.reveal('.main-frame-2, .main-frame-3', {
+  viewFactor: 0.5
 });
+
