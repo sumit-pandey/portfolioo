@@ -62,6 +62,8 @@ nav li:hover {
   left: 47.5%;
   background-color:;
   width: 50px;
+  -webkit-animation: slidedown 2s ease-in-out infinite;
+  -ms-animation: slidedown 2s ease-in-out infinite;
   animation: slidedown 2s ease-in-out infinite;
   
 
@@ -120,7 +122,8 @@ a {
   border-radius: 2px;
   overflow: hidden;
   color: white;
-  
+  -webkit-animation: grow2 3s cubic-bezier(0.42, 0, 0.1, 0.99)  5s forwards;
+  -ms-animation: grow2 3s cubic-bezier(0.42, 0, 0.1, 0.99)  5s forwards;
   animation: grow2 3s cubic-bezier(0.42, 0, 0.1, 0.99)  5s forwards;
   display: flex;
   justify-content: center;
@@ -149,7 +152,8 @@ a {
   border-radius: 2px;
   overflow: hidden;
   color: white;
-  
+  -webkit-animation: grow1 3s cubic-bezier(0.42, 0, 0.1, 0.99) 5s forwards;
+  -ms-animation: grow1 3s cubic-bezier(0.42, 0, 0.1, 0.99) 5s forwards;
   animation: grow1 3s cubic-bezier(0.42, 0, 0.1, 0.99) 5s forwards;
   display: flex;
   justify-content: center;
@@ -177,8 +181,10 @@ a {
   border-radius: 2px;
   overflow: hidden;
   color: white;
-  
+  -webkit-animation: grow 3s cubic-bezier(0.42, 0, 0.1, 0.99) 5s forwards;
+  -ms-animation: grow 3s cubic-bezier(0.42, 0, 0.1, 0.99) 5s forwards;
   animation: grow 3s cubic-bezier(0.42, 0, 0.1, 0.99) 5s forwards;
+  -webkit-display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -203,7 +209,11 @@ a {
   border-radius: 2px;
   overflow: hidden;
   color: white;
+  -webkit-animation: grow3 3s cubic-bezier(0.42, 0, 0.1, 0.99) 5s forwards;
+  -ms-animation: grow3 3s cubic-bezier(0.42, 0, 0.1, 0.99) 5s forwards;
   animation: grow3 3s cubic-bezier(0.42, 0, 0.1, 0.99) 5s forwards;
+  -webkit- display: flex;
+  -ms- display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,6 +230,8 @@ a {
   height: 100%;
   width: 90%;
   background-color: #6969DD;
+  -webkit- display: flex;
+  -ms- display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -240,11 +252,15 @@ a {
 
 /*animations */
 .fade-in{
+  -webkit-animation: fadeIn 0.5s ease-in;
+  -ms-animation: fadeIn 0.5s ease-in;
   animation: fadeIn 0.5s ease-in;
 }
 
 .mf2-inner1{
   display: none;
+  -webkit-animation: zoom 0.8s ease-in;
+  -ms-animation: zoom 0.8s ease-in;
   animation: zoom 0.8s ease-in;
 }
 .mf2-inner:hover .mf2-inner1 {
@@ -253,6 +269,8 @@ a {
 }
 .mf2-inner2{
   display: none;
+  -webkit-animation: zoom 0.8s ease-in  ;
+  -ms-animation: zoom 0.8s ease-in  ;
   animation: zoom 0.8s ease-in  ;
 }
 .mf2-inner:hover .mf2-inner2 {
@@ -265,6 +283,8 @@ a {
 }
 .mf2-inner:hover .mf2-inner3 {
   display: block;
+  -webkit-animation: zoom 0.8s ease-in-out;
+  -ms-animation: zoom 0.8s ease-in-out  ;
   animation: zoom 0.8s ease-in-out  ;
 }
 .mf2-inner4{
@@ -273,7 +293,9 @@ a {
 }
 .mf2-inner:hover .mf2-inner4 {
   display: block;
-  animation: zoom 0.8s ease-in-out  ;
+  -webkit-animation: zoom 0.8s ease-in-out;
+  -ms-animation: zoom 0.8s ease-in-out;
+  animation: zoom 0.8s ease-in-out;
 }
 @keyframes fadeIn {
   from{
@@ -283,6 +305,23 @@ a {
     opacity: 1;
   }
 }
+@-webkit-keyframes fadeIn {
+  from{
+    opacity: 0;
+    }
+  to{
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  from{
+    opacity: 0;
+    }
+  to{
+    opacity: 1;
+  }
+}
+
 
 @keyframes zoom {
   from {
@@ -294,7 +333,45 @@ a {
     opacity: 1
   }
 }
+@-webkit-keyframes zoom {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1
+  }
+}
+@-moz-keyframes zoom {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1
+  }
+}
 @keyframes grow {
+  0%{
+    width: 0px;
+  }
+ 
+  100%{
+    width: 300px;
+  }
+}
+@-webkit-keyframes grow {
+  0%{
+    width: 0px;
+  }
+ 
+  100%{
+    width: 300px;
+  }
+}
+@-moz-keyframes grow {
   0%{
     width: 0px;
   }
@@ -314,7 +391,45 @@ a {
     width: 400px;
   }
 }
+@-webkit-keyframes grow1 {
+  0%{
+    width: 0px;
+    
+  }
+  
+ 
+   100% {
+    width: 400px;
+  }
+}
+@-moz-keyframes grow1 {
+  0%{
+    width: 0px;
+    
+  }
+  
+ 
+   100% {
+    width: 400px;
+  }
+}
 @keyframes grow2 {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 450px;
+  }
+}
+@-webkit-keyframes grow2 {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 450px;
+  }
+}
+@-moz-keyframes grow2 {
   0%{
     width: 0px;
   }
@@ -330,7 +445,39 @@ a {
     width: 510px;
   }
 }
+@-webkit-keyframes grow3 {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 510px;
+  }
+}
+@-moz-keyframes grow3 {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 510px;
+  }
+}
 @keyframes slidedown {
+  from{
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
+@-webkit-keyframes slidedown {
+  from{
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
+@-moz-keyframes slidedown {
   from{
     transform: translateY(0px);
   }
