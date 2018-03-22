@@ -16,7 +16,7 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
-
+   
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
@@ -25,10 +25,12 @@ $(document).ready(function(){
 });
 window.sr = ScrollReveal({ reset: true });
 
-
+// Custom Settings
 sr.reveal('.main-frame-1', { duration: 200 });
 
-sr.reveal('.main-frame-2, .main-frame-3', {
-  viewFactor: 0.5
+sr.reveal('.main-frame-2 ,.main-frame-3', { 
+  origin: 'right', 
+  duration: 2000 
 });
+
 
