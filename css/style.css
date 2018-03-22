@@ -1,14 +1,18 @@
 body{
   margin: 0px;
   padding: 0px;
+  
 }
 
 
 .logo{
+  
   float: left;
   letter-spacing: 0.2em;
-  margin: 15px 5px;
-  color: black;
+  position: relative;
+  top: -50%;
+  left: 2%;
+  color: #424242;
   font-family:Bungee Shade;
 }
 .wrapper {
@@ -22,21 +26,20 @@ body{
   opacity: 0.8;
   z-index:1;
   }
-header nav .button{
+header nav li{
   float: right;
-  margin: 20px;
-  border: #6969DD solid 2px;
-  border-radius:5px;
-  background-color: white;
-  font-size: 16px;
+  margin: 5px 18px;
+  color: black;
+  font-size: 18px;
+  list-style: none;
+  background-color: ;
 }
-nav .button:hover {
+nav li:hover {
   transform: scale(1.03);
 }
 
 .main-frame{
-  background: url("image/background.jpeg");
-
+  background: url("https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
   width: 100vw;
   height: 700px;
   overflow: hidden;
@@ -55,11 +58,12 @@ nav .button:hover {
   }
 .main-frame .section-2{
   position: relative;
-  top: 75%;
+  top: 70%;
   left: 47.5%;
-  background-color: white;
+  background-color:;
   width: 50px;
-  border-radius: 100%
+  animation: slidedown 2s ease-in-out infinite;
+  
 
 }
 .main-frame-1 {
@@ -94,55 +98,118 @@ a {
   height: 500px;
   text-align: center;
   }
-
-.mf2-inner {
-  background-color: #6969DD;
-  height: 90%;
-  width: 95%;
+.mf2-html {
+  width: 100%;
+  height: 20%;
+  background-color: ;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+.html-logo {
+  font-size: 60px;
+  margin: 20px;
+  color: #D16060;
+}
+.mf2-html-bar {
+  width: 0%;
+  height: 60%;
+  background-color: #3f51b5; 
+ 
+  
+  border-radius: 2px;
+  overflow: hidden;
+  color: white;
+  
+  animation: grow2 3s cubic-bezier(0.42, 0, 0.1, 0.99)  5s forwards;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto 3%;
-  border-radius: 6px;
-
 }
-.mf2-inner1{
-  height: 40%;
-  width: 20%;
+.mf2-css {
+  width: 100%;
+  height: 20%;
   background-color: ;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+.css-logo {
+  font-size: 60px;
   margin: 20px;
+  color: #433EE9;
 }
-.mf2-inner2 {
-  height: 40%;
-  width: 20%;
-  margin: 20px;
+.mf2-css-bar {
+   width: 0;
+  height: 60%;
+  
+  background-color: #3f51b5; 
+ 
+  
+  border-radius: 2px;
+  overflow: hidden;
+  color: white;
+  
+  animation: grow1 3s cubic-bezier(0.42, 0, 0.1, 0.99) 5s forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.mf2-inner3 {
-  height: 40%;
-  width: 20%;
-  margin: 20px;
+.mf2-js {
+  width: 100%;
+  height: 20%;
+  background-color: ;
+  margin: 10px;
+  display: flex;
+  align-items: center;
 }
-.mf2-inner4{
-  height: 40%;
-  width: 20%;
-  margin: 20px;
+.js-logo {
+ font-size: 60px;
+  margin: 16px;
+  color: #E6EC36;
 }
-.html {
-  color: #fff;
-  font-size: 150px;
+.mf2-js-bar {
+   width: 0%;
+  height: 60%;
+  background-color: #3f51b5; 
+ 
+  
+  border-radius: 2px;
+  overflow: hidden;
+  color: white;
+  
+  animation: grow 3s cubic-bezier(0.42, 0, 0.1, 0.99) 5s forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.css{
-  color: #fff;
-  font-size: 150px;
+.mf2-git {
+  width: 100%;
+  height: 20%;
+  background-color:;
+  margin: 10px;
+  display: flex;
+  align-items: center;
 }
-.js {
-  color: #fff;
-  font-size: 150px;
+.git-logo {
+  font-size: 60px;
+  margin: 16px;
+  color: black;
 }
-.git {
-  color: #fff;
-  font-size: 150px;
+.mf2-git-bar {
+  width: 0%;
+  height: 60%;
+  background-color: #3f51b5; 
+  border-radius: 2px;
+  overflow: hidden;
+  color: white;
+  animation: grow3 3s cubic-bezier(0.42, 0, 0.1, 0.99) 5s forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+
 .main-frame-3{
   height: 350px;
   width: 100vw;
@@ -164,17 +231,12 @@ a {
   margin: 60px;
   color: #fff
 }
-
-
-.footer {
-  height: 35px;
-  widht: 100vw;
-  background-color:#fff;
-  display: block;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.scroll-up{
+  position: fixed;
 }
+
+
+
 
 /*animations */
 .fade-in{
@@ -183,7 +245,7 @@ a {
 
 .mf2-inner1{
   display: none;
-  animation: zoom 0.8s ease-in-out;
+  animation: zoom 0.8s ease-in;
 }
 .mf2-inner:hover .mf2-inner1 {
   display: block;
@@ -191,7 +253,7 @@ a {
 }
 .mf2-inner2{
   display: none;
-  animation: zoom 0.8s ease-in-out  ;
+  animation: zoom 0.8s ease-in  ;
 }
 .mf2-inner:hover .mf2-inner2 {
   display: block;
@@ -230,6 +292,50 @@ a {
   to {
     transform: scale(1);
     opacity: 1
+  }
+}
+@keyframes grow {
+  0%{
+    width: 0px;
+  }
+ 
+  100%{
+    width: 300px;
+  }
+}
+@keyframes grow1 {
+  0%{
+    width: 0px;
+    
+  }
+  
+ 
+   100% {
+    width: 400px;
+  }
+}
+@keyframes grow2 {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 450px;
+  }
+}
+@keyframes grow3 {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 510px;
+  }
+}
+@keyframes slidedown {
+  from{
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(20px);
   }
 }
 /* MEDIS QUERIES */
@@ -311,6 +417,7 @@ a {
     float: none;
     clear: left;
     text-align: center;
+    
   }
   .burger-nav {
 
