@@ -107,6 +107,8 @@ a {
   margin: 10px;
   display: flex;
   align-items: center;
+  position: relative;
+  left: 30%;
 }
 .html-logo {
   font-size: 60px;
@@ -136,6 +138,8 @@ a {
   margin: 10px;
   display: flex;
   align-items: center;
+  position: relative;
+  left: 30%;
 }
 .css-logo {
   font-size: 60px;
@@ -166,6 +170,8 @@ a {
   margin: 10px;
   display: flex;
   align-items: center;
+  position: relative;
+  left: 30%;
 }
 .js-logo {
  font-size: 60px;
@@ -196,6 +202,8 @@ a {
   margin: 10px;
   display: flex;
   align-items: center;
+  position: relative;
+  left: 30%;
 }
 .git-logo {
   font-size: 60px;
