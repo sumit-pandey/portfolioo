@@ -608,5 +608,17 @@ a {
   .mf3-inner .fa{
    margin: 10px;
  }
+  .main-frame-2 .mf2-html, .mf2-css, .mf2-js, .mf2-git{
+  position: relative;
+  left: -20px;
+  padding-right: 30px;
+  width: 100%;
+  height: 10%;
+  margin: 6%;
+
+}
+.html-logo, .css-logo, .js-logo, .git-logo {
+  font-size: 50px;
+}
 
 }
