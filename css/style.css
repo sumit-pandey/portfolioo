@@ -572,6 +572,8 @@ a {
     float: none;
     clear: left;
     text-align: center;
+    position: relative;
+    top: 2%;
     
   }
   .burger-nav {
@@ -588,8 +590,8 @@ a {
    float: none;
    clear: both;
    position: relative;
-   left: 1%;
-   top: 10%;
+   left: -10%;
+   top: 70%;
    
  }
  .main-frame {
