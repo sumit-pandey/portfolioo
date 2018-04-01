@@ -567,7 +567,7 @@ a {
     height: 15%;
     opacity: 1;
     position: fixed;
-    box-shadow: 10px 5px 5px;
+     box-shadow: 3px 2px #888888;
   }
   .logo {
     float: none;
