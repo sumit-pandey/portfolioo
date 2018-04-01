@@ -564,9 +564,10 @@ a {
 @media screen and (max-width: 480px){
 
   .wrapper {
-    height: 18%;
+    height: 15%;
     opacity: 1;
     position: fixed;
+    box-shadow: 10px 5px 5px;
   }
   .logo {
     float: none;
