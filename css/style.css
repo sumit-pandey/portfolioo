@@ -46,6 +46,7 @@ nav li:hover {
   text-align: center;
   position: relative;
   top: 55px;
+  background-size: cover;
   }
 .main-frame .section-1 {
   position: relative;
